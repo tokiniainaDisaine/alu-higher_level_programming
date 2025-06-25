@@ -6,7 +6,7 @@ str_number = str(number)
 
 if last_digit > 5:
     comparison= "and is greater than 5"
-elif last_digit < 0 and last_digit != 0:
+elif last_digit < 6 and last_digit != 0:
     comparison= "and is less than 6 and not 0"
 elif last_digit == 0:
     comparison= "and is 0"
