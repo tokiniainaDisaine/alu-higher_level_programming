@@ -13,4 +13,4 @@ elif last_digit == 0:
 else:
     comparison = "and there's an error"
 
-print(f'The last digit of {number} is {last_digit} {comparison}')
+print(f'Last digit of {number} is {last_digit} {comparison}')
