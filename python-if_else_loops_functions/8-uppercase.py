@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 def uppercase(str):
     for char in str:
-        if ord(c) >= 97 and ord(c) <= 122:
+        is_char = False
+        if ord(char) >= 97 and ord(char) <= 122:
             is_char = True
         else:
-            is_char = False
+            continue
 
         if is_char:
             print("{}".format(chr(char)), end="")
         else:
-            print(f"{char}", end="")   
+            print(f"{char}", end="")  
