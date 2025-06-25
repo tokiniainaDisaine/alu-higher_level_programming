@@ -1,5 +1,3 @@
 #!/usr/bin/python3
 str = "Holberton School"
-for i in range(1,3):
-    print(str)
-print(str[:9])
+print(f"{str}\n{str}\n{str}\nstr[:9]")
