@@ -1,15 +1,12 @@
 #!/usr/bin/python3
 def uppercase(str):
-    lower_alphabet = 'abcdefghijklmnopqrstuvwxyz'
-    upper_alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-
     for char in str:
-        if char.islower():
-            for i in range(0, 26):
-                if char == lower_alphabet[i]:
-                    temp_letter = upper_alphabet[i]
+        if ord(c) >= 97 and ord(c) <= 122:
+            is_char = True
         else:
-            temp_letter = char
-        result = result + temp_letter
+            is_char = False
 
-# idk
+        if is_char:
+            print("{}".format(chr(char)), end="")
+        else:
+            print(f"{char}", end="")   
