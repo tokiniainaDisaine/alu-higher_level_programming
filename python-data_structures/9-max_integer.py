@@ -5,8 +5,8 @@ def max_integer(my_list=[]):
     i = 0
     if not my_list:
         max = None
-    while (i + 1) <= len(my_list):
-        if my_list[i] < my_list[i + 1]:
+    while (i + 1) < len(my_list):
+        if max < my_list[i + 1]:
             max = my_list[i + 1]
         else:
             pass
