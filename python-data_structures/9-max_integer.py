@@ -3,14 +3,12 @@
 def max_integer(my_list=[]):
     max = my_list[0]
     i = 0
-    while (i + 1) < len(my_list):
+    if not my_list:
+        max = None
+    while (i + 1) <= len(my_list):
         if my_list[i] < my_list[i + 1]:
             max = my_list[i + 1]
         else:
             pass
         i += 1
-
-    if not my_list:
-        max = None
-
     return max
