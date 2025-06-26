@@ -2,6 +2,6 @@
 if __name__ == "__main__":
     from sys import argv
     n = len(argv)
-    print(f"{n} arguments:")
+    print(f"{n-1} arguments:")
     for i in range(1, n):
         print(f"{i} {argv[i]}")
