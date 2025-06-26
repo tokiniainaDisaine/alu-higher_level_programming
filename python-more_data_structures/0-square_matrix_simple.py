@@ -4,6 +4,6 @@ def square_matrix_simple(matrix=[]):
     matrix_len = len(matrix)
 
     for i in range(0, matrix_len):
-        new_matrix[i] = list(map(lambda x: x**2), matrix[i])
+        new_matrix[i] = list(map(lambda x: x**2, matrix[i]))
 
     return (new_matrix)
