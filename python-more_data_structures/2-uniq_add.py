@@ -4,6 +4,6 @@ def uniq_add(my_list=[]):
     total = 0
 
     for i in unique_elements:
-        total = total + i
-        
+        total = total + int(i)
+
     print("Total: {:d}".format(total))
