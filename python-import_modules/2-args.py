@@ -6,7 +6,7 @@ if __name__ == "__main__":
     if (n-1) == 1:
         argument = 'argument:'
     elif (n-1) == 0:
-        argument = 'argument.'
+        argument = 'arguments.'
     else:
         argument = 'arguments:'
 
