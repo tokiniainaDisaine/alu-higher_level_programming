@@ -4,4 +4,4 @@ if __name__ == "__main__":
     n = len(argv)
     print(f"{n-1} argument:")
     for i in range(1, n):
-        print(f"{i} {argv[i]}")
+        print(f"{i}: {argv[i]}")
