@@ -32,19 +32,22 @@ class Square:
             return 0
 
         for j in range((self._size + self._position[1])):
+            i_min = self._position[0]
+            i_max = (self._size + self._position[0])
+
+            j_min = self._position[1]
+            j_max = (self._size + self._position[1])
+
+            if (i_min <= i <= i_max) and (j_min <= j <= j_max):
+                print("")
+                pass
+
             for i in range((self._size + self._position[0])):
-                i_min = self._position[0]
-                i_max = (self._size + self._position[0])
-
-                j_min = self._position[1]
-                j_max = (self._size + self._position[1])
-
 
                 if (i_min <= i <= i_max) and (j_min <= j <= j_max):
                     print("#", end="")
                 else:
                     print(" ", end="")
-            print("")
 
     @property
     def size(self):
@@ -77,7 +80,7 @@ class Square:
     @position.setter
     def position(self, value):
         """This function allows you to change the value of position"""
-        
+
         is_not_tuple = False if isinstance(value, tuple) else True
         is_not_int_0 = False if isinstance(value[0], int) else True
         is_not_int_1 = False if isinstance(value[1], int) else True
