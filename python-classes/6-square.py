@@ -68,9 +68,10 @@ class Square:
         #     is_int_1 = False
 
         # if not is_tuple or len(value) != 2 or not is_int_0 or not is_int_1:
-        if not (isinstance(value, tuple) and len(value) == 2 and
-            isinstance(value[0], int) and value[0] >= 0 and
-            isinstance(value[1], int) and value[1] >= 0):
+        if (not isinstance(value, tuple) or
+                len(value) != 2 or
+                not all(isinstance(num, int) for num in value) or
+                not all(num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
         
         self._position = value
