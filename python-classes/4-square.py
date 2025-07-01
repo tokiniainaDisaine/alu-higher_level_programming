@@ -9,7 +9,7 @@ class Square:
         """Initiator function"""
 
         self._Square__size = size
-      
+
     def area(self):
         """This function returns the area of the square"""
 
