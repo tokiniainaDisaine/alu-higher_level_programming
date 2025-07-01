@@ -1,17 +1,26 @@
 #!/usr/bin/python3
 class Square:
+    """This is a square class that stores properties of a square"""
+
     def __init__(self, size=0):
+        """Initiator function"""
+
         self._size = size
             
     def area(self):
+        """This function returns the area of the square"""
+
         return self._size**2
     
     @property
     def size(self):
+        """This function returns the value of size"""
+
         return self._size
 
     @size.setter
     def size(self, value):
+        """This function allows you to change the value of size"""
         try:
             if value.is_integer() and value > 0:
                 self._size = value
