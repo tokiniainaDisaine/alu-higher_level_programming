@@ -10,14 +10,14 @@ class Square:
 
         self._size = size
 
-        is_not_tuple = False if isinstance(position, tuple) else True
-        is_not_int_0 = False if isinstance(position[0], int) else True
-        is_not_int_1 = False if isinstance(position[1], int) else True
+        # is_not_tuple = False if isinstance(position, tuple) else True
+        # is_not_int_0 = False if isinstance(position[0], int) else True
+        # is_not_int_1 = False if isinstance(position[1], int) else True
 
-        if is_not_tuple or len(position) != 2 or is_not_int_0 or is_not_int_1:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        else:
-            self._position = position
+        # if is_not_tuple or len(position) != 2 or is_not_int_0 or is_not_int_1:
+        #     raise TypeError("position must be a tuple of 2 positive integers")
+        # else:
+        self._position = position
 
     def area(self):
         """This function returns the area of the square"""
@@ -31,23 +31,10 @@ class Square:
             print("")
             return 0
 
-        for j in range((self._size + self._position[1])):
-            i_min = self._position[0]
-            i_max = (self._size + self._position[0])
-
-            j_min = self._position[1]
-            j_max = (self._size + self._position[1])
-
-            if i_min <= i:
-                print("")
-                pass
-
-            for i in range((self._size + self._position[0])):
-
-                if (i_min <= i <= i_max) and (j_min <= j <= j_max):
-                    print("#", end="")
-                else:
-                    print(" ", end="")
+        print('\n'*self.__position[1], end='')
+        for i in range(self.__size):
+            print(' '*self.__position[0], end='')
+            print('#'*self.__size)
 
     @property
     def size(self):
@@ -59,17 +46,12 @@ class Square:
     def size(self, value):
         """This function allows you to change the value of size"""
 
-        try:
-            if isinstance(value, int) and value > 0:
-                self._size = value
-            elif value < 0:
-                raise ValueError
-            else:
-                raise TypeError
-        except TypeError:
-            print("size must be an integer")
-        except ValueError:
-            print("size must be >= 0")
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self._Square__size = value
 
     @property
     def position(self):
@@ -82,8 +64,8 @@ class Square:
         """This function allows you to change the value of position"""
 
         is_not_tuple = False if isinstance(value, tuple) else True
-        is_not_int_0 = False if isinstance(value[0], int) else True
-        is_not_int_1 = False if isinstance(value[1], int) else True
+        is_not_int_0 = False if isinstance(value[0], int) or value[0] < 0 else True
+        is_not_int_1 = False if isinstance(value[1], int) or value[1] < 0 else True
 
         if is_not_tuple or len(value) != 2 or is_not_int_0 or is_not_int_1:
             raise TypeError("position must be a tuple of 2 positive integers")
