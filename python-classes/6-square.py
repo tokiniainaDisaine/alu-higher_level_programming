@@ -57,12 +57,12 @@ class Square:
 
         is_not_tuple = False if isinstance(value, tuple) else True
 
-        if isinstance(value[0], int) or value[0] < 0:
+        if isinstance(value[0], int) or value[0] > 0:
             is_not_int_0 = False
         else:
             is_not_int_0 = True
 
-        if isinstance(value[1], int) or value[1] < 0:
+        if isinstance(value[1], int) or value[1] > 0:
             is_not_int_1 = False
         else:
             is_not_int_1 = True
