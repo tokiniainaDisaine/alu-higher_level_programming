@@ -9,15 +9,15 @@ class Square:
         """Initiator function"""
 
         self._size = size
-            
+
     def area(self):
         """This function returns the area of the square"""
 
         return self._size**2
-    
+
     def my_print(self):
         """This function print a square using # as blocks"""
-         
+
         if self._size == 0:
             print("")
             return 0
@@ -26,7 +26,7 @@ class Square:
             for j in range(self._size):
                 print("#", end="")
             print("")
-    
+
     @property
     def size(self):
         """This function returns the value of size"""
@@ -42,10 +42,9 @@ class Square:
                 self._size = value
             elif value < 0:
                 raise ValueError
-            else: 
+            else:
                 raise TypeError
         except TypeError:
             print("size must be an integer")
         except ValueError:
             print("size must be >= 0")
-   
