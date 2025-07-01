@@ -66,15 +66,7 @@ class Square:
     def position(self, value):
         """This function allows you to change the value of position"""
 
-        try:
-            if value.is_integer() and value > 0:
-                self._position = value     
-            elif value < 0:
-                raise ValueError
-            else: 
-                raise TypeError
-        except TypeError:
-            print("size must be an integer")
-        except ValueError:
-            print("size must be >= 0")
-
+        if isinstance(value, tuple) and len(value) == 2:
+            self._position = value     
+        else:
+            raise TypeError("position must be a tuple of 2 positive integers")
