@@ -9,7 +9,7 @@ class Square:
         """This function checks if the argument is an integer"""
 
         try:
-            if size.is_integer() and size > 0:
+            if isinstance(size, int) and size > 0:
                 self._size = size
             elif size < 0:
                 raise ValueError

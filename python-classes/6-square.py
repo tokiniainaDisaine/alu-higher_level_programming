@@ -45,7 +45,7 @@ class Square:
         """This function allows you to change the value of size"""
 
         try:
-            if value.is_integer() and value > 0:
+            if isinstance(value, int) and value > 0:
                 self._size = value
             elif value < 0:
                 raise ValueError
