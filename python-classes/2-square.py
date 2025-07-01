@@ -10,7 +10,7 @@ class Square:
 
         try:
             if size.is_integer() and size > 0:
-                self._size = size
+                self._Square__size = size
             elif size < 0:
                 raise ValueError
             else: 
