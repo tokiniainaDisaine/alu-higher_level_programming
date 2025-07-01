@@ -9,28 +9,6 @@ class Square:
         """Initiator function"""
 
         self._size = size
-
-        is_tuple = True if isinstance(position, tuple) else False
-
-        if (isinstance(position[0], int) or position[0] > 0):
-            is_int_0 = True
-        else:
-            is_int_0 = False
-
-        if (isinstance(position[1], int) or position[1] >= 0):
-            is_int_1 = True
-        else:
-            is_int_1 = False
-
-        if (not is_tuple 
-            or len(position) != 2 
-            or not is_int_0 
-            or not is_int_1):
-        # if (not isinstance(position, tuple) or
-        #         len(position) != 2 or
-        #         not all(isinstance(num, int) for num in position) or
-        #         not all(num >= 0 for num in position)):
-            raise TypeError("position must be a tuple of 2 positive integers")
         self._position = position
 
     def area(self):
@@ -77,23 +55,22 @@ class Square:
     def position(self, value):
         """This function allows you to change the value of position"""
 
-        is_tuple = True if isinstance(value, tuple) else False
+        # is_tuple = True if isinstance(value, tuple) else False
 
-        if (isinstance(value[0], int) or value[0] > 0):
-            is_int_0 = True
-        else:
-            is_int_0 = False
+        # if (isinstance(value[0], int) or value[0] > 0):
+        #     is_int_0 = True
+        # else:
+        #     is_int_0 = False
 
-        if (isinstance(value[1], int) or value[1] >= 0):
-            is_int_1 = True
-        else:
-            is_int_1 = False
+        # if (isinstance(value[1], int) or value[1] >= 0):
+        #     is_int_1 = True
+        # else:
+        #     is_int_1 = False
 
-        if (not is_tuple or len(value) != 2 or not is_int_0 or not is_int_1):
-        # if (not isinstance(value, tuple) or
-        #         len(value) != 2 or
-        #         not all(isinstance(num, int) for num in value) or
-        #         not all(num >= 0 for num in value)):
+        if (not (isinstance(value[0], int) or value[0] > 0) 
+            or len(value) != 2 
+            or not (isinstance(value[0], int) or value[0] > 0)
+            or not (isinstance(value[1], int) or value[1] >= 0)):
             raise TypeError("position must be a tuple of 2 positive integers")
         
         self._position = value
