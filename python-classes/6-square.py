@@ -9,6 +9,28 @@ class Square:
         """Initiator function"""
 
         self._size = size
+
+        is_tuple = True if isinstance(position, tuple) else False
+
+        if (isinstance(position[0], int) or position[0] > 0):
+            is_int_0 = True
+        else:
+            is_int_0 = False
+
+        if (isinstance(position[1], int) or position[1] >= 0):
+            is_int_1 = True
+        else:
+            is_int_1 = False
+
+        if (not is_tuple 
+            or len(position) != 2 
+            or not is_int_0 
+            or not is_int_1):
+        # if (not isinstance(position, tuple) or
+        #         len(position) != 2 or
+        #         not all(isinstance(num, int) for num in position) or
+        #         not all(num >= 0 for num in position)):
+            raise TypeError("position must be a tuple of 2 positive integers")
         self._position = position
 
     def area(self):
