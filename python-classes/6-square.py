@@ -10,10 +10,10 @@ class Square:
 
         self._size = size
 
-        if isinstance(position, tuple) and len(position) == 2:
-            self._position = position     
-        else:
-            raise TypeError("position must be a tuple of 2 positive integers")
+        # if not isinstance(position, tuple) or len(position) != 2 or not isinstance(position[0], int) or not isinstance(position[1], int):
+        #     raise TypeError("position must be a tuple of 2 positive integers")
+        # else:
+        self._position = position
             
     def area(self):
         """This function returns the area of the square"""
@@ -70,7 +70,7 @@ class Square:
     def position(self, value):
         """This function allows you to change the value of position"""
 
-        if isinstance(value, tuple) and len(value) == 2:
-            self._position = value     
-        else:
+        if not isinstance(value, tuple) or len(value) != 2 or not isinstance(value[0], int) or not isinstance(value[1], int):
             raise TypeError("position must be a tuple of 2 positive integers")
+        else:
+            self._position = value
