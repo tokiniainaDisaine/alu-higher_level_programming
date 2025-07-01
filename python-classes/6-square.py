@@ -14,12 +14,12 @@ class Square:
         #     raise TypeError("position must be a tuple of 2 positive integers")
         # else:
         self._position = position
-            
+
     def area(self):
         """This function returns the area of the square"""
 
         return self._size**2
-    
+
     def my_print(self):
         """This function print a square using # as blocks in a 2D plane"""
 
@@ -53,7 +53,7 @@ class Square:
                 self._size = value
             elif value < 0:
                 raise ValueError
-            else: 
+            else:
                 raise TypeError
         except TypeError:
             print("size must be an integer")
