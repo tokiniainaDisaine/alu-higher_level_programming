@@ -55,19 +55,22 @@ class Square:
     def position(self, value):
         """This function allows you to change the value of position"""
 
-        is_tuple = True if isinstance(value, tuple) else False
+        # is_tuple = True if isinstance(value, tuple) else False
 
-        if isinstance(value[0], int) or value[0] >= 0:
-            is_int_0 = True
-        else:
-            is_int_0 = False
+        # if isinstance(value[0], int) or value[0] > 0:
+        #     is_int_0 = True
+        # else:
+        #     is_int_0 = False
 
-        if isinstance(value[1], int) or value[1] >= 0:
-            is_int_1 = True
-        else:
-            is_int_1 = False
+        # if isinstance(value[1], int) or value[1] >= 0:
+        #     is_int_1 = True
+        # else:
+        #     is_int_1 = False
 
-        if (not is_tuple or len(value) != 2 or (not is_int_0 and not is_int_1)):
+        # if not is_tuple or len(value) != 2 or not is_int_0 or not is_int_1:
+        if not (isinstance(value, tuple) and len(value) == 2 and
+            isinstance(value[0], int) and value[0] >= 0 and
+            isinstance(value[1], int) and value[1] >= 0):
             raise TypeError("position must be a tuple of 2 positive integers")
-
+        
         self._position = value
