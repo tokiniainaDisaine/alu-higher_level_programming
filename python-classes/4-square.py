@@ -9,12 +9,12 @@ class Square:
         """Initiator function"""
 
         self._Square__size = size
-            
+      
     def area(self):
         """This function returns the area of the square"""
 
         return self._Square__size**2
-    
+
     @property
     def size(self):
         """This function returns the value of size"""
