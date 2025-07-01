@@ -9,7 +9,11 @@ class Square:
         """Initiator function"""
 
         self._size = size
-        self._position = position
+
+        if isinstance(position, tuple) and len(position) == 2:
+            self._position = position     
+        else:
+            raise TypeError("position must be a tuple of 2 positive integers")
             
     def area(self):
         """This function returns the area of the square"""
