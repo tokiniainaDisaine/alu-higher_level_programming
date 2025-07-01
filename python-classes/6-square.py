@@ -38,7 +38,7 @@ class Square:
             j_min = self._position[1]
             j_max = (self._size + self._position[1])
 
-            if (i_min <= i <= i_max) and (j_min <= j <= j_max):
+            if i_min <= i:
                 print("")
                 pass
 
