@@ -9,8 +9,8 @@ class Square:
         """This function checks if the argument is an integer"""
 
         if size < 0:
-            raise ValueError("size must be an integer")
-        elif not isinstance(size, int): 
             raise TypeError("size must be >= 0")
+        elif not isinstance(size, int): 
+            raise ValueError("size must be an integer")
         else:
             self._Square__size = size
