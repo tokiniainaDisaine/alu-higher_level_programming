@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""This is a square class that does nothing"""
+
 class Square:
     """This is a square class that stores a size and can calculate the area"""
 
@@ -19,5 +21,5 @@ class Square:
 
     def area(self):
         """This function returns the area of the square"""
-        
+
         return self._size**2
