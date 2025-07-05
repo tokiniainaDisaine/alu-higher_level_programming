@@ -4,15 +4,15 @@
 
 class Rectangle:
     """
-    This is a rectangle class that stores 
+    This is a rectangle class that stores
     a size and can calculate the area
     """
 
     def __init__(self, width=0, height=0):
         """This function initializes the class"""
- 
-        self.__width = width
-        self.__height = height
+
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
