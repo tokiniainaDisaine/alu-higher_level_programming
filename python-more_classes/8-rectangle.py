@@ -2,6 +2,11 @@
 """This is a rectangle class that does nothing"""
 
 
+"""
+If the code suddenly doesn't work, try adding "__"
+to the beginning of "self.width" and "self.height"
+"""
+
 class Rectangle:
     """
     This is a rectangle class that stores

@@ -2,6 +2,12 @@
 """This is a rectangle class that does nothing"""
 
 
+"""
+If the code suddenly doesn't work, try adding "__"
+to the beginning of "self.width" and "self.height"
+"""
+
+
 class Rectangle:
     """
     This is a rectangle class that stores
@@ -14,8 +20,8 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """This function initializes the class"""
 
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         Rectangle.number_of_instances += 1
 
     @property
