@@ -3,17 +3,20 @@
 
 
 class Rectangle:
-    """This is a rectangle class that stores a size and can calculate the area"""
+    """
+    This is a rectangle class that stores
+    a size and can calculate the area
+    """
 
     number_of_instances = 0
     print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         """This function initializes the class"""
-        
+
         self.__width = width
         self.__height = height
-        number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -58,24 +61,26 @@ class Rectangle:
 
         if self.__height == 0 or self.__width == 0:
             return 0
-        
-        return (self.__height + self.__width) * 2
-    
-    def __str__(self):
-        if self.__width == 0 or self.__height == 0:
-            print('')
 
-        for i in self.__height:
-            for j in self.__width:
-                print("{}".format(self.print_symbol), end='')
-            print('')
-    
+        return (self.__height + self.__width) * 2
+
+    def __str__(self):
+        result = ""
+        if self.__width == 0 or self.__height == 0:
+            return result
+
+        for i in range(self.__height):
+            for j in range(self.__width):
+                result += "{}".format(self.print_symbol)
+            result += "\n" if i != (self.__height-1) else ""
+        return result
+
     def __repr__(self):
-        print(str(self))
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
     def __del__(self):
         print("Bye rectangle...")
-        number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
