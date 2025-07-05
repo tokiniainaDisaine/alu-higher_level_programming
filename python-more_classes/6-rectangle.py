@@ -2,11 +2,6 @@
 """This is a rectangle class that does nothing"""
 
 
-"""
-If the code suddenly doesn't work, try adding "__"
-to the beginning of "self.width" and "self.height"
-"""
-
 class Rectangle:
     """
     This is a rectangle class that stores
@@ -55,7 +50,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
-            
+
     def area(self):
         """Returns the area"""
         return self.__height * self.__width
