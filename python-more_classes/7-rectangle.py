@@ -1,0 +1,78 @@
+#!/usr/bin/python3
+"""This is a rectangle class that does nothing"""
+
+
+class Rectangle:
+    """This is a rectangle class that stores a size and can calculate the area"""
+
+    number_of_instances = 0
+    print_symbol = '#'
+
+    def __init__(self, width=0, height=0):
+        """This function initializes the class"""
+        
+        self.__width = width
+        self.__height = height
+        number_of_instances += 1
+
+    @property
+    def width(self):
+        """This function returns the value of width"""
+
+        return self.__width
+
+    @width.setter
+    def size(self, value):
+        """This function allows you to change the value of width"""
+
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__width = value
+
+    @property
+    def height(self):
+        """This function returns the value of height"""
+
+        return self.__height
+
+    @height.setter
+    def size(self, value):
+        """This function allows you to change the value of height"""
+
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__height = value
+
+    def area(self):
+        """Returns the area"""
+        return self.__height * self.__width
+
+    def perimeter(self):
+        """Returns the perimeter"""
+
+        if self.__height == 0 or self.__width == 0:
+            return 0
+        
+        return (self.__height + self.__width) * 2
+    
+    def __str__(self):
+        if self.__width == 0 or self.__height == 0:
+            print('')
+
+        for i in self.__height:
+            for j in self.__width:
+                print("{}".format(self.print_symbol), end='')
+            print('')
+    
+    def __repr__(self):
+        print(str(self))
+
+    def __del__(self):
+        print("Bye rectangle...")
+        number_of_instances -= 1
