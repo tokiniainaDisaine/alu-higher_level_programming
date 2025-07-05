@@ -10,7 +10,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """This function initializes the class"""
-        
+ 
         self.width = width
         self.height = height
 
@@ -52,4 +52,5 @@ class Rectangle:
         return self.__height * self.__width
 
     def perimeter(self):
-        return (self.__height + self.__width) * 2
+        rect_perimeter = (self.__height + self.__width) * 2
+        return rect_perimeter
