@@ -3,11 +3,14 @@
 
 
 class Rectangle:
-    """This is a rectangle class that stores a size and can calculate the area"""
+    """
+    This is a rectangle class that stores
+    a size and can calculate the area
+    """
 
     def __init__(self, width=0, height=0):
         """This function initializes the class"""
-        
+  
         self.__width = width
         self.__height = height
 
@@ -54,17 +57,19 @@ class Rectangle:
 
         if self.__height == 0 or self.__width == 0:
             return 0
-        
+  
         return (self.__height + self.__width) * 2
-    
-    def __str__(self):
-        if self.__width == 0 or self.__height == 0:
-            print('')
 
-        for i in self.__height:
-            for j in self.__width:
-                print("#", end='')
-            print('')
-    
+    def __str__(self):
+        result = ""
+        if self.__width == 0 or self.__height == 0:
+            return result
+
+        for i in range(self.__height):
+            for j in range(self.__width):
+                result += "#"
+            result += "\n" if i != (self.__height-1) else ""
+        return result
+
     def __repr__(self):
-        print(str(self))
+        return str(self)
