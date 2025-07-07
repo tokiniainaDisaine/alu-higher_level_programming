@@ -13,7 +13,7 @@ class Rectangle(BaseGeometry):
 
         super().integer_validator("height", height)
         self.__height = height
-    
+
     def __str__(self):
         return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
 
