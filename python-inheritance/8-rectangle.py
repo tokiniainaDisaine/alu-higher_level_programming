@@ -10,8 +10,7 @@ class Rectangle(BaseGeometry):
         """This is the instantiator function"""
 
         self.integer_validator("width", width)
-        self.__width = width 
+        self.__width = width
 
         self.integer_validator("height", height)
         self.__height = height
-    
