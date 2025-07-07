@@ -8,4 +8,6 @@ class MyList(list):
     """This class is inherited from the list class"""
 
     def print_sorted(self):
-        print(self.sort())
+        """This function print the sorted list input"""
+        
+        print(sorted(self))
