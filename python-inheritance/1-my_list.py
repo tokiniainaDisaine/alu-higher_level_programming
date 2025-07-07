@@ -8,6 +8,4 @@ class MyList(list):
     """This class is inherited from the list class"""
 
     def print_sorted(self):
-        copy_list = self.copy()
-        copy_list.sort()
-        print(copy_list)
+        print(self.sort())
