@@ -8,8 +8,11 @@ class Rectangle(BaseGeometry):
 
     def __init__(self, width, height):
         """This is the instantiator function"""
-        self.__width = integer_validator("width", width)
-        self.__height = integer_validator("height", height)
+        super().integer_validator("width", width)
+        self.__width = width
+
+        super().integer_validator("height", height)
+        self.__height = height
     
     def __str__(self):
         print("[Rectangle] {:d}/{:d}".format(self.__width, self.__height))
