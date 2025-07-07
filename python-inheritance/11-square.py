@@ -8,9 +8,10 @@ class Square(Rectangle):
     def __init__(self, size):
         """Too tired to add documentation"""
 
-        super.__init__(size, size)
+        super().integer_validator("size", size)
+        super().__init__(size, size)
 
     def __str__(self):
         """Maybe next time I'll add explanation"""
-        
+
         return "[Square] {:d}/{:d}".format(self.__width, self.__height)
