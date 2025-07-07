@@ -17,5 +17,5 @@ class Square(Rectangle):
         I'm super tired rn
         I'm adding word like class and agrs int
         """
-
+        super().integer_validator("size", size)
         super().__init__(size, size)
