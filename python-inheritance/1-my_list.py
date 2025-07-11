@@ -9,5 +9,5 @@ class MyList(list):
 
     def print_sorted(self):
         """This function print the sorted list input"""
-        
+
         print(sorted(self))
