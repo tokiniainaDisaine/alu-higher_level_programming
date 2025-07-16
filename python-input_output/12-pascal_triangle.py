@@ -3,27 +3,31 @@
 
 
 def pascal_triangle(n):
-    """This module implements the Pascal's triangle"""
-    final_list = []
+    """
+    Generates Pascal's Triangle up to the specified number of rows.
 
-    if n == 0:
-        return final_list
-    
-    for i in range(n):
-        inside_list = []
+    Args:
+        num_rows: The number of rows to generate in Pascal's Triangle.
 
-        for j in range(i):
-            if j == 0:
-                inside_list.append(1)
-            if j == i:
-                inside_list.append(1)
-            else:
-                number = inside_list[j] + inside_list[j-1]
-                inside_list.append(number)
+    Returns:
+        A list of lists representing Pascal's Triangle.
+    """
+    triangle = []
 
-        final_list.append(inside_list)
-    
-    return final_list
+    for row_num in range(n):
+        # Initialize the current row with 1s.
+        # The length of row_num is row_num + 1.
+        current_row = [1] * (row_num + 1)
+
+        # Calculate the middle elements of the current row
+        # by summing elements from the previous row.
+        if row_num > 1:  # Only for rows beyond the first two
+            for j in range(1, row_num):
+                current_row[j] = triangle[row_num - 1][j - 1] + triangle[row_num - 1][j]
+        
+        triangle.append(current_row)
+
+    return triangle
 
 if __name__ == "__main__":
     triangle = pascal_triangle(5)
