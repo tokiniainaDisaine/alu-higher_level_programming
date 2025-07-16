@@ -8,4 +8,4 @@ def read_file(filename=""):
     This function reads a text file
     """
     with open(filename, 'r') as file:
-        print(file.read())
+        print(file.read(), end='')
