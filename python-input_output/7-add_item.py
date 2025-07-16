@@ -22,3 +22,5 @@ def add_item():
     args += sys.argv[1:]
 
     save_to_json_file(args, "add_item.json")
+
+add_item()
