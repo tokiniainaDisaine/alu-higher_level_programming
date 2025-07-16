@@ -19,7 +19,7 @@ def add_item():
     try:
         args = load_from_json_file("add_item.json")
     except Exception:
-        pass
+        args = []
     args += sys.argv[1:]
 
     save_to_json_file(args, "add_item.json")
