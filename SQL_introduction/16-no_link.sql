@@ -1,5 +1,5 @@
 -- comment
 SELECT score, name
 FROM second_table
-WHERE name IS NOT EMPTY
+WHERE name != ""
 ORDER BY score DESC
