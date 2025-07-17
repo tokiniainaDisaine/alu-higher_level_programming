@@ -32,10 +32,6 @@ class Student:
 
     def reload_from_json(self, json):
         """I don't really know about this one"""
-        del first_name
-        del last_name
-        del age
-
-        for name, value in json.items():
-            self.name = value
+        for atr in json:
+            self.__dict__[atr] = json[atr]
 
