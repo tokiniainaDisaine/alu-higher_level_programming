@@ -18,7 +18,7 @@ def add_item():
 
     try:
         args = load_from_json_file("add_item.json")
-    except Exception:
+    except FileNotFoundError:
         args = []
 
     args.extend(sys.argv[1:])
