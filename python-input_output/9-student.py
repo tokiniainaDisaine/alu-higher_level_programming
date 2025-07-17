@@ -5,9 +5,9 @@
 class Student:
 
     def __init__(self, first_name, last_name, age):
-        first_name = first_name 
-        last_name = last_name 
-        age = age
+        self.first_name = first_name 
+        self.last_name = last_name 
+        self.age = age
 
 
     def to_json(self):
@@ -15,9 +15,4 @@ class Student:
         This class returns the dictionary representsation of 
         the class attributes
         """
-        final_json = {}
-
-        for name, value in self.__dict__.items():
-            final_json[name] = value
-
-        return final_json
+        return self.__dict__.copy()
