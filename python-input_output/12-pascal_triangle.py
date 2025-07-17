@@ -23,8 +23,10 @@ def pascal_triangle(n):
         # by summing elements from the previous row.
         if row_num > 1:  # Only for rows beyond the first two
             for j in range(1, row_num):
-                current_row[j] = triangle[row_num - 1][j - 1] + triangle[row_num - 1][j]
-        
+                var_1 =  triangle[row_num - 1][j - 1]
+                var_2 = triangle[row_num - 1][j]
+                current_row[j] = var_1 + var_2
+
         triangle.append(current_row)
 
     return triangle
