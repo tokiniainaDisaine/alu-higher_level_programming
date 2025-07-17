@@ -11,13 +11,21 @@ class Student:
 
     def to_json(self, attrs=None):
         """
-        This class returns the dictionary representsation of 
-        the class attributes
+        This method returns a json
         """
-        if isinstance(attrs, list):
-            attrs_dict = {}
+        obj = self.__dict__.copy()
+        if type(attrs) is list:
 
-            for keys in attrs:
-                attrs_dict[keys] = self.keys
-            return attrs_dict
-        return self.__dict__.copy()
+            for item in attrs:
+                if type(item) is not str:
+                    return obj
+
+            d_list = {}
+
+            for iatr in range(len(attrs)):
+                for satr in obj:
+                    if attrs[iatr] == satr:
+                        d_list[satr] = obj[satr]
+            return d_list
+
+        return obj
