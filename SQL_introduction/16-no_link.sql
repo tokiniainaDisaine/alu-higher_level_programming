@@ -1,3 +1,4 @@
+-- comment
 SELECT (
     score,
     name
