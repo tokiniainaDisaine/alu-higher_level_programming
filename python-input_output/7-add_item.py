@@ -22,9 +22,11 @@ if __name__ == "__main__":
     and then save them to a file
     """
 
-    try:
-        items = load_from_json_file("add_item.json")
-    except FileNotFoundError:
-        items = []
-    items.extend(sys.argv[1:])
-    save_to_json_file(items, "add_item.json")
+    # try:
+    args = load_from_json_file("add_item.json")
+    # except FileNotFoundError:
+    #     args = []
+
+    # args.extend(sys.argv[1:])
+    args += sys.argv[1:]
+    save_to_json_file(args, "add_item.json")
