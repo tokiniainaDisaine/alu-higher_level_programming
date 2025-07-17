@@ -5,33 +5,33 @@
 class Student:
 
     def __init__(self, first_name, last_name, age):
-        first_name = first_name 
-        last_name = last_name 
-        age = age
-
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
 
     def to_json(self, attrs=None):
         """
-        This class returns the dictionary representsation of 
-        the class attributes
+        This method returns a json
         """
-        # final_json = {}
+        obj = self.__dict__.copy()
+        if type(attrs) is list:
 
-        # for name, value in self.__dict__.items():
-        #     final_json[name] = value
+            for item in attrs:
+                if type(item) is not str:
+                    return obj
 
-        # return final_json
+            d_list = {}
 
-        if isinstance(attrs, list):
-            attrs_dict = {}
+            for iatr in range(len(attrs)):
+                for satr in obj:
+                    if attrs[iatr] == satr:
+                        d_list[satr] = obj[satr]
+            return d_list
 
-            for keys in attrs:
-                attrs_dict[keys] = self.keys
-            return attrs_dict
-        return vars(self)
-    
+        return obj
 
     def reload_from_json(self, json):
+        """I don't really know about this one"""
         del first_name
         del last_name
         del age
