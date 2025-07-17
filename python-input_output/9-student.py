@@ -15,10 +15,9 @@ class Student:
         This class returns the dictionary representsation of 
         the class attributes
         """
-        # final_json = {}
+        final_json = {}
 
-        # for name, value in self.__dict__.items():
-        #     final_json[name] = value
+        for name, value in self.__dict__.items():
+            final_json[name] = value
 
-        # return final_json
-        return vars(self)
+        return final_json
