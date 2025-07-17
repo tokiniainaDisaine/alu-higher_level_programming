@@ -34,4 +34,3 @@ class Student:
         """I don't really know about this one"""
         for atr in json:
             self.__dict__[atr] = json[atr]
-
