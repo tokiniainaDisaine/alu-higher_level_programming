@@ -5,12 +5,12 @@ Module that adds 2 integers
 
 
 def add_integer(a, b=98):
-    """ 
+    """
     function that adds 2 integers
 
     Args:
         a (int): integer
-        b (int): integer 
+        b (int): integer
 
     Returns:
         sum of two integers
@@ -20,3 +20,6 @@ def add_integer(a, b=98):
     if type(b) not in (int, float):
         raise TypeError("b must be an integer")
     return int(a) + int(b)
+
+print(add_integer(1))
+# print(add_integer())
