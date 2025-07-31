@@ -21,4 +21,4 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
     return int(a) + int(b)
 
-print(add_integer(-100.3))
+print(add_integer(1.4 , 2))
