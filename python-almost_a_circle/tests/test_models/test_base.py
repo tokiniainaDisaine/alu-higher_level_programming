@@ -68,6 +68,6 @@ class TestBase(TestCase):
     def test_from_json_string(self):
         """Test """
         self.assertEqual(Base.from_json_string(None), [])
-        # self.assertEqual(Base.from_json_string('[{"id": 89}]'), [{'id': 89}])
-        # self.assertEqual(type(Base.from_json_string('[{"id": 89}]')), list)
-        # self.assertEqual(Base.from_json_string("[]"), [])
+        self.assertEqual(Base.from_json_string('[{"id": 89}]'), [{'id': 89}])
+        self.assertEqual(type(Base.from_json_string('[{"id": 89}]')), list)
+        self.assertEqual(Base.from_json_string("[]"), [])
