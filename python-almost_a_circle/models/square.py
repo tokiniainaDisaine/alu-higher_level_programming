@@ -6,68 +6,103 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """ Class Rectangle """
+    """  Rectangle """
 
     def __init__(self, size, x=0, y=0, id=None):
-        """ Initializes instances """
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
         super().__init__(size, size, x, y, id)
 
-#     def __str__(self):
-#         """ str special method """
-#         str_square = "[Square] "
-#         str_id = "({}) ".format(self.id)
-#         str_xy = "{}/{} - ".format(self.x, self.y)
-#         str_wh = "{}/{}".format(self.width, self.height)
+    def __str__(self):
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
+        str_square = "[Square] "
+        str_id = "({}) ".format(self.id)
+        str_xy = "{}/{} - ".format(self.x, self.y)
+        str_wh = "{}/{}".format(self.width, self.height)
 
-#         return str_square + str_id + str_xy + str_wh
+        return str_square + str_id + str_xy + str_wh
 
-#     @property
-#     def size(self):
-#         """ Getter size """
-#         return self.width
+    @property
+    def size(self):
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
+        return self.width
 
-#     @size.setter
-#     def size(self, value):
-#         """ Setter size """
-#         self.width = value
-#         self.height = value
+    @size.setter
+    def size(self, value):
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
+        self.width = value
+        self.height = value
 
-#     def __str__(self):
-#         """ str special method """
-#         str_rectangle = "[Square] "
-#         str_id = "({}) ".format(self.id)
-#         str_xy = "{}/{} - ".format(self.x, self.y)
-#         str_size = "{}".format(self.size)
+    def __str__(self):
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
+        str_rectangle = "[Square] "
+        str_id = "({}) ".format(self.id)
+        str_xy = "{}/{} - ".format(self.x, self.y)
+        str_size = "{}".format(self.size)
 
-#         return str_rectangle + str_id + str_xy + str_size
+        return str_rectangle + str_id + str_xy + str_size
 
-#     def update(self, *args, **kwargs):
-#         """ update method """
-#         if args is not None and len(args) != 0:
-#             list_atr = ['id', 'size', 'x', 'y']
-#             for i in range(len(args)):
-#                 if list_atr[i] == 'size':
-#                     setattr(self, 'width', args[i])
-#                     setattr(self, 'height', args[i])
-#                 else:
-#                     setattr(self, list_atr[i], args[i])
-#         else:
-#             for key, value in kwargs.items():
-#                 if key == 'size':
-#                     setattr(self, 'width', value)
-#                     setattr(self, 'height', value)
-#                 else:
-#                     setattr(self, key, value)
+    def update(self, *args, **kwargs):
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
+        if args is not None and len(args) != 0:
+            list_atr = ['id', 'size', 'x', 'y']
+            for i in range(len(args)):
+                if list_atr[i] == 'size':
+                    setattr(self, 'width', args[i])
+                    setattr(self, 'height', args[i])
+                else:
+                    setattr(self, list_atr[i], args[i])
+        else:
+            for key, value in kwargs.items():
+                if key == 'size':
+                    setattr(self, 'width', value)
+                    setattr(self, 'height', value)
+                else:
+                    setattr(self, key, value)
 
-#     def to_dictionary(self):
-#         """ Returns a dictionary with attributes """
-#         list_atr = ['id', 'size', 'x', 'y']
-#         dict_res = {}
+    def to_dictionary(self):
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
+        list_atr = ['id', 'size', 'x', 'y']
+        dict_res = {}
 
-#         for key in list_atr:
-#             if key == 'size':
-#                 dict_res[key] = getattr(self, 'width')
-#             else:
-#                 dict_res[key] = getattr(self, key)
+        for key in list_atr:
+            if key == 'size':
+                dict_res[key] = getattr(self, 'width')
+            else:
+                dict_res[key] = getattr(self, key)
 
-#         return dict_res
+        return dict_res

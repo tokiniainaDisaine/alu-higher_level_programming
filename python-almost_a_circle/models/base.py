@@ -1,16 +1,31 @@
 #!/usr/bin/python3
-""" Module that contains class Base """
+""" 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+Proin finibus pharetra lorem, accumsan sagittis felis pretium
+"""
 import json
 import csv
 import os.path
 
 
 class Base:
-    """ Class Base """
+    """ 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+    placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+    Proin finibus pharetra lorem, accumsan sagittis felis pretium
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """ Initializes instances """
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
         if id is not None:
             self.id = id
         else:
@@ -19,14 +34,24 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """ List to JSON string """
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
         if list_dictionaries is None or list_dictionaries == "[]":
             return "[]"
         return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """ Save object in a file """
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
         filename = "{}.json".format(cls.__name__)
         list_dic = []
 
@@ -43,14 +68,24 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """ JSON string to dictionary """
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
         if not json_string:
             return []
         return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
-        """ Create an instance """
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
         if cls.__name__ == "Rectangle":
             new = cls(10, 10)
         else:
@@ -60,7 +95,12 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """ Returns a list of instances """
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
         filename = "{}.json".format(cls.__name__)
 
         if os.path.exists(filename) is False:
@@ -79,7 +119,12 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        """ Method that saves a CSV file """
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
         filename = "{}.csv".format(cls.__name__)
 
         if cls.__name__ == "Rectangle":
@@ -105,7 +150,12 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
-        """ Method that loads a CSV file """
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
         filename = "{}.csv".format(cls.__name__)
 
         if os.path.exists(filename) is False:
