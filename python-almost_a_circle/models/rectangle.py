@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
 placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -12,7 +12,7 @@ class Rectangle(Base):
     """ Class Rectangle """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -26,7 +26,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -36,7 +36,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -50,7 +50,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -60,7 +60,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -74,7 +74,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -84,7 +84,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -98,7 +98,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -108,7 +108,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -121,7 +121,7 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -130,7 +130,7 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -144,7 +144,7 @@ class Rectangle(Base):
         print(rectangle, end='')
 
     def __str__(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -158,7 +158,7 @@ class Rectangle(Base):
         return str_rectangle + str_id + str_xy + str_wh
 
     def update(self, *args, **kwargs):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -173,7 +173,7 @@ class Rectangle(Base):
                 setattr(self, key, value)
 
     def to_dictionary(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat

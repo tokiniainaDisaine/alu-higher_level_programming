@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
 placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -11,7 +11,7 @@ import os.path
 
 
 class Base:
-    """ 
+    """
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
     placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -20,7 +20,7 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -34,7 +34,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -46,7 +46,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -68,7 +68,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -80,7 +80,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -95,7 +95,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -119,7 +119,7 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -150,7 +150,7 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
