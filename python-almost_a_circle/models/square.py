@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" Module that contains class Square,
+""" 
+Module that contains class Square,
 inheritance of class Rectangle
 """
 from models.rectangle import Rectangle
@@ -9,7 +10,7 @@ class Square(Rectangle):
     """  Rectangle """
 
     def __init__(self, size, x=0, y=0, id=None):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -18,7 +19,7 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -33,7 +34,7 @@ class Square(Rectangle):
 
     @property
     def size(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -43,7 +44,7 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -53,7 +54,7 @@ class Square(Rectangle):
         self.height = value
 
     def __str__(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -67,7 +68,7 @@ class Square(Rectangle):
         return str_rectangle + str_id + str_xy + str_size
 
     def update(self, *args, **kwargs):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -90,7 +91,7 @@ class Square(Rectangle):
                     setattr(self, key, value)
 
     def to_dictionary(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
