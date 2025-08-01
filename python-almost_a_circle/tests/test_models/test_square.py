@@ -1,25 +1,25 @@
-# #!/usr/bin/python3
-# """Test for Square"""
+#!/usr/bin/python3
+"""Test for Square"""
 
-# import os
-# import unittest
-# from io import StringIO
-# from unittest.mock import patch
+import os
+import unittest
+from io import StringIO
+from unittest.mock import patch
 
-# from models.base import Base
-# from models.square import Square
+from models.base import Base
+from models.square import Square
 
 
-# class TestSquare(unittest.TestCase):
-#     """Test for class Square"""
+class TestSquare(unittest.TestCase):
+    """Test for class Square"""
 
-#     def test_instance(self):
-#         """Test the functions in square"""
-#         s = Square(1)
-#         s1 = Square(1, 2)
-#         s2 = Square(1, 2, 3)
-#         s12 = Square(1, 0)
-#         s0 = Square(1, 2, 3, 4)
+    def test_instance(self):
+        """Test the functions in square"""
+        s = Square(1)
+        s1 = Square(1, 2)
+        s2 = Square(1, 2, 3)
+        s12 = Square(1, 0)
+        s0 = Square(1, 2, 3, 4)
 
 #         self.assertEqual(s0.id, 4)
 

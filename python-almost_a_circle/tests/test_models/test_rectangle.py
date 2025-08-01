@@ -1,25 +1,25 @@
-# #!/usr/bin/python3
-# """Test the REctangle class"""
+#!/usr/bin/python3
+"""Test the REctangle class"""
 
-# import unittest
-# from io import StringIO
-# from unittest.mock import patch
-# import os
+import unittest
+from io import StringIO
+from unittest.mock import patch
+import os
 
-# from models.base import Base
-# from models.rectangle import Rectangle
+from models.base import Base
+from models.rectangle import Rectangle
 
 
-# class TestRectangle(unittest.TestCase):
-#     """Test class for Base"""
+class TestRectangle(unittest.TestCase):
+    """Test class for Base"""
 
-#     def test_instance(self):
-#         """Doc"""
-#         Base._Base__nb_objects = 0
-#         rect1 = Rectangle(1, 2)
-#         rect2 = Rectangle(1, 2, 3)
-#         rect3 = Rectangle(1, 2, 3, 4)
-#         rect = Rectangle(1, 2, 3, 4, 5)
+    def test_instance(self):
+        """Doc"""
+        Base._Base__nb_objects = 0
+        rect1 = Rectangle(1, 2)
+        rect2 = Rectangle(1, 2, 3)
+        rect3 = Rectangle(1, 2, 3, 4)
+        rect = Rectangle(1, 2, 3, 4, 5)
 
 #         self.assertEqual(rect.id, 5)
 
