@@ -3,11 +3,11 @@
 Script that adds the State object “Louisiana” to the database
 Using module SQLAlchemy
 """
-
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sys import argv
+
 
 if __name__ == "__main__":
     # create an engine

@@ -6,6 +6,7 @@ table of hbtn_0e_0_usa where name matches the argument
 import MySQLdb
 from sys import argv
 
+
 # The code should not be executed when imported
 if __name__ == '__main__':
 
