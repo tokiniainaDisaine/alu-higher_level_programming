@@ -18,3 +18,9 @@ NameError: name 's' is not defined
 98
 >>> add_integer(-100.3)
 -2
+>>> add_integer(1e123456789876543, 1e123456789876543)
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+>>> add_integer(float(nan), 1)
+Traceback (most recent call last):
+NameError: name 'NaN' is not defined
