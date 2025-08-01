@@ -31,8 +31,8 @@ class TestBase(TestCase):
         """
         base = Base()
         base_1 = Base()
-    #     base_89 = Base(89)
-    #     self.assertEqual(base.id, 1)
+        base_89 = Base(89)
+        self.assertEqual(base.id, 1)
     #     self.assertEqual(base_1.id, 2)
     #     self.assertEqual(base_89.id, 89)
 
