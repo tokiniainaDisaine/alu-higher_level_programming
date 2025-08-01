@@ -90,14 +90,14 @@ class TestBase(TestCase):
                              '[{"id": 1, "width": 2, '
                              '"height": 3, "x": 0, "y": 0}]')
 
-    # def test_from_json_string(self):
-    #     """ 
-    #     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    #     Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
-    #     placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
-    #     Proin finibus pharetra lorem, accumsan sagittis felis pretium
-    #     """
-    #     self.assertEqual(Base.from_json_string(None), [])
-    #     self.assertEqual(Base.from_json_string('[{"id": 89}]'), [{'id': 89}])
-    #     self.assertEqual(type(Base.from_json_string('[{"id": 89}]')), list)
-    #     self.assertEqual(Base.from_json_string("[]"), [])
+    def test_from_json_string(self):
+        """ 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
+        placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
+        Proin finibus pharetra lorem, accumsan sagittis felis pretium
+        """
+        self.assertEqual(Base.from_json_string(None), [])
+        self.assertEqual(Base.from_json_string('[{"id": 89}]'), [{'id': 89}])
+        self.assertEqual(type(Base.from_json_string('[{"id": 89}]')), list)
+        self.assertEqual(Base.from_json_string("[]"), [])
