@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
 placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -16,7 +16,7 @@ from models.square import Square
 
 
 class TestSquare(unittest.TestCase):
-    """ 
+    """
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
     placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -24,7 +24,7 @@ class TestSquare(unittest.TestCase):
     """
 
     def test_instance(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -63,7 +63,7 @@ class TestSquare(unittest.TestCase):
             s6 = Square(1, 2, "3")
 
     def test_area(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -73,7 +73,7 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(s1.area(), 4)
 
     def test__str__(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -87,7 +87,7 @@ class TestSquare(unittest.TestCase):
                              "[Square] (1) 0/0 - 2\n")
 
     def test_display(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -105,7 +105,7 @@ class TestSquare(unittest.TestCase):
                              "\n\n\n  ##\n  ##\n")
 
     def test_to_dictionary(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -117,7 +117,7 @@ class TestSquare(unittest.TestCase):
                          {'id': 1, 'size': 4, 'x': 0, 'y': 0})
 
     def test_update(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -165,7 +165,7 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(s1.y, 3)
 
     def test_create(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -199,7 +199,7 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(s1.y, 3)
 
     def test_save_to_file(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -223,7 +223,7 @@ class TestSquare(unittest.TestCase):
                              '[{"id": 1, "size": 1, "x": 0, "y": 0}]')
 
     def test_save_to_file_empty(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -236,7 +236,7 @@ class TestSquare(unittest.TestCase):
             self.assertEqual(type(file.read()), str)
 
     def test_load_from_file(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
