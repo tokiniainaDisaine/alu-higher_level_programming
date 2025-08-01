@@ -30,7 +30,7 @@ class TestBase(TestCase):
         Proin finibus pharetra lorem, accumsan sagittis felis pretium
         """
         base = Base()
-    #     base_1 = Base()
+        base_1 = Base()
     #     base_89 = Base(89)
     #     self.assertEqual(base.id, 1)
     #     self.assertEqual(base_1.id, 2)
