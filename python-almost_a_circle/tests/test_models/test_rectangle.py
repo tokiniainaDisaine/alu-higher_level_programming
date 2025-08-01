@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
 placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -16,7 +16,7 @@ from models.rectangle import Rectangle
 
 
 class TestRectangle(unittest.TestCase):
-    """ 
+    """
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
     placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -24,7 +24,7 @@ class TestRectangle(unittest.TestCase):
     """
 
     def test_instance(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -69,7 +69,7 @@ class TestRectangle(unittest.TestCase):
             r7 = Rectangle(1, 2, 3, "4")
 
     def test_area(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -79,7 +79,7 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(reactnage.area(), 15)
 
     def test__str__(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -93,7 +93,7 @@ class TestRectangle(unittest.TestCase):
                              "[Rectangle] (1) 0/0 - 5/3\n")
 
     def test_display(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -116,7 +116,7 @@ class TestRectangle(unittest.TestCase):
                              "\n\n   ####\n   ####\n")
 
     def test_to_dictionary(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -128,7 +128,7 @@ class TestRectangle(unittest.TestCase):
                          {'id': 1, 'width': 4, 'height': 2, 'x': 0, 'y': 0})
 
     def test_update(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -191,7 +191,7 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r1.y, 4)
 
     def test_create(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -225,7 +225,7 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r1.y, 4)
 
     def test_save_to_file(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -250,7 +250,7 @@ class TestRectangle(unittest.TestCase):
                              '"height": 2, "x": 0, "y": 0}]')
 
     def test_save_to_file_empty(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
@@ -263,7 +263,7 @@ class TestRectangle(unittest.TestCase):
             self.assertEqual(type(file.read()), str)
 
     def test_load_from_file(self):
-        """ 
+        """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin iaculis tellus a felis sodales pulvinar. Mauris tempor
         placerat sem et ultrices. Donec ut dapibus turpis, a feugiat
