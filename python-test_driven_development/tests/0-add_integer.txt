@@ -21,6 +21,6 @@ NameError: name 's' is not defined
 >>> add_integer(1e123456789876543, 1e123456789876543)
 Traceback (most recent call last):
 OverflowError: cannot convert float infinity to integer
->>> add_integer(float('NaN'), 1)
+>>> add_integer(float('nan'), 2)
 Traceback (most recent call last):
-ValueError: name 'NaN' is not defined
+ValueError: cannot convert float NaN to integer
