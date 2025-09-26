@@ -5,9 +5,7 @@ const myObject = {
 };
 console.log(myObject);
 
-const myObject_2 = {
-  type: 'object',
-  value: 12
-};
+// Update value property to 89
+myObject.value = 89;
 
-console.log(myObject_2);
+console.log(myObject);
