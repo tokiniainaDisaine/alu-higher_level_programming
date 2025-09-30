@@ -9,3 +9,6 @@ function nbOccurences(list, searchElement) {
 
     return occurence;
 }
+
+
+module.exports = nbOccurences;

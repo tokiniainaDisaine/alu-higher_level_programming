@@ -5,3 +5,5 @@ class Square extends Rectangle {
         this.height = size;
     }
 }
+
+module.exports = Square;
