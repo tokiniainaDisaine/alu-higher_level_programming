@@ -1,10 +1,8 @@
 #!/usr/bin/node
 exports.esrever = function (list) {
-  let occurence = 0;
+  let reverse = [];
   for (let i = 0; i < list.length; i++) {
-    if (list[i] == searchElement) {
-      occurence++;
-    }
+    reverse.push(list[-i]);
   }
-  return occurence;
+  return reverse;
 };
