@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const request = require('request');
-request('https://swapi-api.alx-tools.com/api/films/', function (body) {
+request('https://swapi-api.alx-tools.com/api/films/', function (error, response, body) {
   var count;  
   for (const film of body["results"]) {
     for (const character of film["characters"]) {
