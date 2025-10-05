@@ -4,9 +4,10 @@ request(process.argv[2], function (error, response, body) {
   if (!error) {
     const result = {};
     for (const task of JSON.parse(body)) {
-      result[task.userId] = 0;
-      if (task.completed === true) {
-        result[task.userId]++;
+      if (task.completed && completed[task.userId] === undefined) {
+        result[task.userId] = 1;
+      } else if (task.completed) {
+        result[task.userId] += 1;
       }
     }
     console.log(result);
