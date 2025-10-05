@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const request = require('request');
-request('https://jsonplaceholder.typicode.com/todos', function (error, response, body) {
+request(process.argv[2], function (error, response, body) {
   const result = {};
   for (const task of JSON.parse(body)) {
     result[task["userId"]] = 0;
