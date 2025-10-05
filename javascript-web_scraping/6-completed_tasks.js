@@ -8,5 +8,5 @@ request(process.argv[2], function (error, response, body) {
       result[task["userId"]]++;
     }
   }
-  return result;
+  console.log(result);
 });
