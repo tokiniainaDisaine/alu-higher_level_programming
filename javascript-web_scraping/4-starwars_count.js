@@ -11,5 +11,5 @@ request.get(url, (error, response, body) => {
       }
     }
   }
-  return count;
+  console.log(count);
 });
